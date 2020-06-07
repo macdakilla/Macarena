@@ -1,0 +1,108 @@
+.assort-cat {
+    &__wrap {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    &__item {
+        margin-bottom: -1px;
+        margin-left: -0.00001px;
+        max-width: 100%;
+        width: 100%;
+        flex: 0 0 100%;
+        transform: scale(1, 1);
+        overflow: hidden;
+        position: relative;
+        transition: all .6s ease 0s;
+        > div {
+            padding: 4.5rem 1rem;
+            background-color: rgba(70,70,70,0.7);
+            background-image: inherit;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            transition: all .6s ease 0s;
+        }
+    }
+    &__content {
+        padding: 0;
+        text-align: center;
+        transition: .5s;
+        color: #ffffff;
+        z-index: 10;
+        position: relative;
+    }
+    &__title {
+        font-size: 24px;
+        font-size: 1.5rem;
+        letter-spacing: 2.88px;
+        font-family: Oswald, sans-serif;
+        text-transform: uppercase;
+        word-wrap: break-word;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+    &__descr > p {
+        margin: 1rem 0 0;
+        padding: 0;
+        font-weight: 300;
+        font-size: 16px;
+        font-size: 1rem;
+        color: #fff;
+        margin-top: 0;
+        transition-property: opacity, line-height;
+        transition-duration: .1s, .3s;
+        display: none;
+    }
+    &__effect {
+        background-color: rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        &::after, &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            z-index: 5;
+            transition: .5s;
+            background: rgba(214,63,21,0.2);
+        }
+        &::after {
+            transform: translate(100%, 100%);
+        }
+        &::before {
+            transform: translate(-100%, -100%);
+        }
+    }
+    &__link:hover .assort-cat__effect::before, &__link:hover .assort-cat__effect::after {
+        opacity: 1;
+        transform: translate(0%, 0%);
+    }
+    &__link:hover .assort-cat__descr > p {
+        opacity: 1;
+        line-height: 1.75;
+        transition-duration: .7s, .3s;
+    }
+}
+.assort-full {
+    margin-top: 90px;
+    margin-bottom: 73px;
+    p {
+        font-size: 29px;
+        margin: 0;
+    }
+}

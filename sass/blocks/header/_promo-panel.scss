@@ -1,0 +1,32 @@
+.promo-panel {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+    padding: 20px 15px 135px;
+    &__subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 1.2;
+        font-family: Montserrat, sans-serif;
+        color: #ffffff;
+        text-transform: none;
+        margin-bottom: 7px;
+        text-transform: uppercase;
+    }
+    &__title {
+        font-style: normal;
+        font-size: 45px;
+        line-height: 1.2;
+        font-family: Oswald, sans-serif;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+    &__descr {
+        margin-bottom: 39px;
+        display: none;
+        font-size: 21px;
+        color: #ffffff;
+        font-weight: 300;
+    }
+}

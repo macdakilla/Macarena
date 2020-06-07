@@ -1,0 +1,19 @@
+.header {
+    &-wrapper {
+        background-color: #1D2027;
+        background-image: url();
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: scroll;
+    }
+    &-layout {
+        background-color: rgba(0,0,0,0.3);
+    }
+    &-container {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+        padding: 12.25px 0 0;
+        &_wrap {
+            position: relative;
+        }
+    }
+}

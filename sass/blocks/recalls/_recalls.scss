@@ -1,0 +1,25 @@
+.recalls {
+    background-color: #ffffff;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    &__wrap {
+        padding: 30px 0 0;
+        font-family: 'PT Serif', serif;
+    }
+    &__content p {
+        font-style: italic;
+        font-weight: normal;
+        margin-bottom: 50px;
+    }
+    &__portrait {
+        margin: 0 auto;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+    }
+    &__name {
+        padding-top: 15px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+    }
+}

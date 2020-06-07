@@ -1,0 +1,41 @@
+.social-list {
+    &__items {
+        line-height: 0;
+        margin-left: -1px;
+        margin-right: -1px;
+    }
+    .menu-item {
+        margin: 0;
+        padding: 1px;
+        > a {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            font-size: 0.75rem;
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+            margin: auto;
+            border-radius: 45px;
+            transition: .3s;
+        }
+    }
+    a {
+        background: #484848;
+        color: #bdbdbd !important;
+        &:hover {
+            background: #f7f7f7;
+            color: #484848 !important;
+        }
+    }
+}
+.inline-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+        display: inline-block;
+        vertical-align: top;
+    }
+}

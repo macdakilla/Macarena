@@ -1,0 +1,55 @@
+.about {
+    & &__title {
+        margin-top: 63px !important;
+        max-width: 790px;
+        margin: 0 auto;
+        p {
+            font-weight: 300;
+        }
+    }
+    & &__quote-wrap {
+        max-width: 790px;
+        margin-top: 35px;
+        blockquote {
+            font-size: 18px;
+            font-size: 1.125rem;
+            line-height: 2;
+            font-weight: 400;
+            position: relative;
+            margin: 0 0 1.5em;
+            padding-left: 35px;
+            &::before {
+                position: absolute;
+                left: 0;
+                top: 0;
+                font-size: 70px;
+                content: "\201c";
+                line-height: 1;
+            }
+        }
+    }
+    &__img {
+        margin-top: 90px !important;
+        margin-bottom: 63px !important;
+        margin-left: 0;
+    }
+    &-footer {
+        margin-bottom: 35px;
+        > div {
+            max-width: 810px;
+            hr {
+                margin-top: 32px !important;
+            }
+        }
+        &__text {
+            font-size: 29px;
+            color: #2b2f3e !important;
+            margin-top: 27px !important;
+            margin-bottom: 27px !important;
+            font-weight: 300;
+            p {
+                margin: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+.news-item {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 3em;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    border-top: 1px solid #ebebeb;
+    padding-top: 3em;
+    &:first-child {
+        padding-top: 0;
+        border-top: none;
+    }
+    &__thumbnail {
+        display: block;
+        &-wrap {
+            overflow: hidden;
+            margin: 0;
+            margin-bottom: 2em;
+        }
+        img {
+            width: 100%;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+    &__title {
+        margin: 0 0 15px;
+        font-size: 24px;
+        font-size: 1.5rem;
+    }
+    &__descr {
+        margin-top: 1.5em;
+        display: none;
+        p {
+            margin-bottom: 1.5em;
+        }
+    }
+    &__footer {
+        margin-top: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        > * {
+            margin-bottom: 15px;
+        }
+        .btn-link {
+            margin-right: 15px;
+        }
+    }
+    &__date {
+        color: #686868;
+    }
+    &__tags {
+        -webkit-box-flex: 1;
+        flex: 1 1 100%;
+        margin-bottom: 15px;
+        margin-right: -3px;
+        margin-left: -3px;
+        a {
+            font-family: Oswald, sans-serif;
+            border-color: #d63f15 !important;
+            color: #484848;
+            background-color: #fff;
+            text-decoration: none;
+            font-size: 12px;
+            font-size: .75rem;
+            display: inline-block;
+            text-transform: uppercase;
+            font-weight: 400;
+            padding: 9px 15px;
+            border: 2px solid;
+            border-radius: 45px;
+            letter-spacing: 1.44px;
+            margin: 5px 3px;
+            line-height: 1.1;
+            &:hover {
+                border-color: #d63f15;
+                background-color: #d63f15;
+                color: #fff;
+            }
+        }
+    }
+}

@@ -1,0 +1,57 @@
+/*
+Theme Name: Macarena
+*/
+
+/* Core */
+@import './core/core';
+
+/* Elements */
+@import './elements/btn';
+@import './elements/title';
+@import './elements/social-list';
+@import './elements/breadcrumbs';
+@import './elements/input';
+
+/* Blocks */
+    /* Header */
+    @import './blocks/header/header';
+    @import './blocks/header/top-panel';
+    @import './blocks/header/promo-panel';
+    @import './blocks/header/menu';
+    /* Footer */
+    @import './blocks/footer/footer';
+    @import './blocks/footer/footer-top';
+    @import './blocks/footer/footer-bottom';
+    @import './blocks/footer/to-top';
+    /* Main assortment */
+    @import './blocks/main-assort/assort';
+    /* Recals */
+    @import './blocks/recalls/recalls';
+    /* Recomends */
+    @import './blocks/recomends/recomends';
+    /* Contact */
+    @import './blocks/contact/contact';
+    /* Gallery */
+    @import './blocks/gallery/promo-gallery';
+    /* Assortment */
+    @import './blocks/assort/assort';
+    @import './blocks/assort/assort-header';
+    /* Assortment item */
+    @import './blocks/assort-item/assort-item';
+    @import './blocks/assort-item/related';
+    /* News */
+    @import './blocks/news/news';
+    /* About Us */
+    @import './blocks/about/about';
+    @import './blocks/about/achiev';
+    @import './blocks/about/team';
+    /* 404 page */
+    @import './blocks/error404/error';
+
+
+
+/* Media */
+@import './media/media544';
+@import './media/media768';
+@import './media/media992';
+@import './media/media1200';

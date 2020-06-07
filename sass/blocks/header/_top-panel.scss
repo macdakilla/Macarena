@@ -1,0 +1,26 @@
+.top-panel {
+    background-color: #000000;
+    padding: 10px 0;
+    &__message {
+        padding: 5px .9375rem;
+        display: none;
+    }
+    &__item {
+        font-size: .8125rem;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: 1.5;
+        position: relative;
+        padding-left: 20px;
+        color: #bdbdbd;
+        i {
+            color: white;
+            margin-right: 10px;
+            font-size: .875rem;
+        }
+    }
+    .social-list {
+        align-self: center;
+        padding: 6.5px 0.9375rem;
+    }
+}

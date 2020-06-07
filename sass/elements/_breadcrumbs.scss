@@ -1,0 +1,27 @@
+.breadcrumbs {
+    position: relative;
+    margin: 1em 0;
+    & &__items {
+        float: left;
+    }
+    & &__wrap {
+        float: left;
+        margin: 0;
+    }
+    & &__item {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 1.5;
+        font-family: Montserrat, sans-serif;
+        letter-spacing: 0px;
+        color: #bdbdbd;
+        float: left;
+        &-link {
+            text-decoration: none;
+        }
+        &-sep {
+            margin: 0 1.5em;
+        }
+    }
+}
